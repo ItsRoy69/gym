@@ -19,10 +19,9 @@ app.use('/api', galleryRoutes);
 // connection with DB
 mongoose.connect('mongodb://localhost:27017/gallery',{
   useUnifiedTopology: true,
-  useFindAndModify: true,
-  useNewurlParser: true
-}).then(()=>console.log('CONNECTED WITH DB'))
-.catch(()=>console.log('NOT CONNECTED WITH DB'))
+  useNewUrlParser: true
+}).then(()=>console.log("CONNECTED WITH DB"))
+.catch(()=>console.log("NOT CONNECTED WITH DB"))
 
 const port = 5000;
 
