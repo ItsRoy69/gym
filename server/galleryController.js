@@ -1,3 +1,0 @@
-exports.addImage=(req,res)=>{
-  
-}
