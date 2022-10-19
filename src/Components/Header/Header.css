@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+.header_menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+
+.header_menu li{
+    cursor: pointer;
+}
+
+.header_menu li:hover{
+    color: var(--orange);
+}
+
+.toggleEffect{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .header_menu{
+       flex-direction: column;
+       position: fixed;
+       top: 4rem;
+       right: -230px;
+       width: 230px;
+       background-color: black;
+       color: white;
+       height: 35vh;
+       justify-content: flex-start;
+       align-items: flex-start;
+       padding: 2rem 3rem;
+       border-radius: 10px;
+       transition: 0.3s ease;
+       z-index: 3;
+    } 
+
+    .header_menu.active{
+        right: 10px;
+    }
+
+    .toggleEffect{
+        display: inherit;
+    }
+}

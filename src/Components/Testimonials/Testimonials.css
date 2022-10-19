@@ -1,0 +1,120 @@
+.testimonial{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.testimonial .left_t{
+    flex:  1 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+
+.testimonial .left_t span:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.testimonial .left_t span:nth-child(2),.testimonial .left_t span:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.left_t span:nth-child(4){
+    line-height: 40px;
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+/* left_t section */
+
+
+
+.right_t{
+    flex: 1;
+    position: relative;
+}
+
+.right_t .right_t_F_image{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem; 
+}
+
+.right_t div:nth-child(1){
+   position: absolute;
+   width: 17rem;
+   height: 20rem;
+   border: 2px solid orange;
+   background-color: transparent;
+   right: 9rem;
+   top: 0.9rem;
+}
+
+.right_t div:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background: var(--planCard);
+    right: 7rem;
+    top: 4rem;
+ }
+
+ .arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+ }
+
+ .arrows img{
+    width: 1.5rem;
+    cursor: pointer;
+ }
+
+
+ @media screen and (max-width:768px){
+    .testimonial{
+        flex-direction: column;
+    }
+
+    .arrows{
+       position: relative;
+       left: 0rem;
+       margin: 1rem 0rem;
+     }
+
+     .right_t .right_t_F_image{
+        width: 17rem;
+        height: 20rem;
+        object-fit: cover;
+        left: 2rem;
+        top: 3rem;
+    }
+
+    .right_t div:nth-child(1){
+        left: 0rem;
+        top: 2rem;
+     }
+     
+     .right_t div:nth-child(2){
+        left: 0rem;
+        top: 4rem;
+      }
+    
+    
+ }
+
+ @media screen and (max-width:500px){
+    .testimonial .left_t span:nth-child(2),.testimonial .left_t span:nth-child(3){
+        font-size: 2rem;
+    }
+ }

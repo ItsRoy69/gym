@@ -1,0 +1,57 @@
+.footer_container{
+    width: 100%;
+    position: relative;
+  
+}
+
+.footer_container hr{
+    border: 1px solid var(--lightgray);
+}
+
+.footer{
+    padding: 1rem 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+}
+
+ .social_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.social_link img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo_f img{
+    width: 10rem;
+}
+
+/* blur */
+
+.blur_f_1{
+    width: 26rem;
+    height: 12rem;
+    bottom: 0;
+    right: 30%;
+    filter: blur(100px);
+    background: rgb(255, 115, 0);
+}
+
+.blur_f_2{
+    width: 26rem;
+    height: 12rem;
+    bottom: 0;
+    left: 30%;
+    filter: blur(100px);
+    background: rgb(255, 115, 0);
+}
